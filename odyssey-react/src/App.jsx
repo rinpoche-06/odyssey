@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import HeroSlide from './components/HeroSlide';
 import AboutSlide from './components/AboutSlide';
 import TimelineSlide from './components/TimelineSlide';
+import ResourcesSection from './components/ResourcesSection';
+import FAQsSection from './components/FAQsSection';
 import ComingSoonBar from './components/ComingSoonBar';
 import CustomCursor from './components/CustomCursor';
 import './App.css';
@@ -31,6 +33,8 @@ function App() {
         <HeroSlide scrollToSection={scrollToSection} />
         <AboutSlide />
         <TimelineSlide />
+        <ResourcesSection />
+        <FAQsSection />
       </div>
 
       <ComingSoonBar />
