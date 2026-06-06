@@ -1,0 +1,25 @@
+.slide-nav {
+  position: fixed;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dot-nav {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.dot-nav.active {
+  background: #fff;
+}

@@ -1,0 +1,147 @@
+.about-slide {
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1100px;
+  padding: 0 60px;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--g-blue);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-label::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--g-blue);
+}
+
+.section-title {
+  font-family: 'Google Sans Display', 'Google Sans', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.section-body {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.section-body strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+.stat-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  cursor: pointer;
+}
+
+.stat-num {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-num.red { color: var(--g-red); }
+.stat-num.blue { color: var(--g-blue); }
+.stat-num.green { color: var(--g-green); }
+
+.stat-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-card-stack {
+  position: relative;
+  height: 400px;
+}
+
+.info-card {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px 28px;
+  cursor: pointer;
+}
+
+.card-c1 {
+  width: 280px;
+  top: 0;
+  left: 20px;
+  border-top: 2px solid var(--g-blue);
+}
+
+.card-c2 {
+  width: 260px;
+  top: 120px;
+  left: 80px;
+  border-top: 2px solid var(--g-red);
+  background: var(--surface2);
+}
+
+.card-c3 {
+  width: 240px;
+  top: 240px;
+  left: 30px;
+  border-top: 2px solid var(--g-green);
+}
+
+.card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.icon-blue { background: rgba(66,133,244,0.15); }
+.icon-red { background: rgba(234,67,53,0.15); }
+.icon-green { background: rgba(52,168,83,0.15); }
+
+.card-label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.card-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}

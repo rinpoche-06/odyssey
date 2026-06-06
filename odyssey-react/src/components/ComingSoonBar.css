@@ -1,0 +1,31 @@
+.coming-soon-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: linear-gradient(90deg, var(--g-blue), var(--g-green), var(--g-yellow), var(--g-red));
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cs-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.cs-date {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+}
+
+.cs-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.35);
+}

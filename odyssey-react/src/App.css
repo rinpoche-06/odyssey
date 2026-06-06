@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Display:wght@400;700&display=swap');
+
+:root {
+  --g-red: #EA4335;
+  --g-blue: #4285F4;
+  --g-green: #34A853;
+  --g-yellow: #FBBC04;
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface2: #1a1a1a;
+  --text: #ffffff;
+  --text-muted: #888888;
+  --border: rgba(255,255,255,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Google Sans', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app {
+  width: 100%;
+  position: relative;
+}
+
+.content-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 64px;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 64px;
+}
+
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
